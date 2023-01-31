@@ -8,4 +8,8 @@
     .header-icon {
         @apply md:h-12 md:px-10 active:border-blue-500 active:border-b-2 hover:text-blue-500 rounded-lg flex items-center text-[#d4d9de] hover:bg-[#3a3c3d]
     }
+
+    .sidebar-link {
+@apply flex items-center space-x-3 text-white 
+    }
 }

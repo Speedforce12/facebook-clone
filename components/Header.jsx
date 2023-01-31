@@ -9,7 +9,6 @@ import HeaderActions from "./HeaderActions";
 import { FaFacebookMessenger } from "react-icons/fa";
 import NavSearch from "./navbar/NavSearch";
 import { TbBellRinging2 } from "react-icons/tb";
-import { useState } from "react";
 
 const Header = () => {
   return (
@@ -44,6 +43,7 @@ const Header = () => {
           src='/images/avatar.png'
           width={200}
           height={200}
+          alt="avatar"
           className='h-10 w-10 cursor-pointer object-contain lg:h-12 lg:w-12'
         />
       </div>
