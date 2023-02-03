@@ -1,10 +1,12 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import axios from "axios";
+import profilePic from "../public/images/mkbhd.jpg";
+import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
 
 const BASEURL = "https://random-data-api.com/api/v2";
 
-const FeedTabs = () => {
+const Stories = () => {
   const [data, setData] = useState();
 
   useEffect(() => {
@@ -21,18 +23,61 @@ const FeedTabs = () => {
   }, []);
 
   return (
-    <div className='flex h-60 lg:w-full lg:rounded-lg  bg-white p-2  dark:bg-black/10'>
-      {data?.map((item) => (
+    <div className='relative flex h-40 w-20 items-center gap-x-1 rounded-xl  lg:h-60 lg:w-40'>
+        <div className='AiOutlineRight absolute z-30 flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-white'>
+          <AiOutlineLeft className='text-lg text-gray-500' />
+        </div>
+
+      <Image
+        src={profilePic}
+        priority
+        className='h-full w-full  cursor-pointer rounded-lg object-cover hover:scale-[1.01]'
+      />
+      <Image
+        src={profilePic}
+        priority
+        className='h-full w-full  cursor-pointer rounded-lg object-cover hover:scale-[1.01]'
+      />
+      <Image
+        src={profilePic}
+        priority
+        className='h-full w-full  cursor-pointer rounded-lg object-cover hover:scale-[1.01]'
+      />
+      <Image
+        src={profilePic}
+        priority
+        className='h-full w-full  cursor-pointer rounded-lg object-cover hover:scale-[1.01]'
+      />
+      <Image
+        src={profilePic}
+        priority
+        className='h-full w-full  cursor-pointer rounded-lg object-cover hover:scale-[1.01]'
+      />
+      <Image
+        src={profilePic}
+        priority
+        className='h-full w-full  cursor-pointer rounded-lg object-cover hover:scale-[1.01]'
+      />
+      <Image
+        src={profilePic}
+        priority
+        className='h-full w-full  cursor-pointer rounded-lg object-cover hover:scale-[1.01]'
+      />
+
+      <div className='AiOutlineRight absolute right-12 z-30 flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-white'>
+        <AiOutlineRight className='text-lg text-gray-500' />
+      </div>
+      {/* {data?.map((item) => (
         <div className='relative mx-2 flex w-full  items-center rounded-lg  p-2 shadow-md' key={item.id}>
           <Image
             
             src={item.avatar}
             alt=''
             fill
-            className='lg:rounded-lg object-contain cursor-pointer hover:scale-105 rounded-full'
+            className='rounded-lg object-contain cursor-pointer hover:scale-105'
           />
 
-          <div className='absolute top-5 z-20 lg:flex h-14 w-14 items-center justify-center rounded-full border-4 border-blue-500 hidden'>
+          <div className='absolute top-5 z-20 flex h-14 w-14 items-center justify-center rounded-full border-4 border-blue-500 hidden'>
             <Image
               src={item.avatar}
               alt=''
@@ -46,9 +91,9 @@ const FeedTabs = () => {
             {item.first_name} {item.last_name}
           </span>
         </div>
-      ))}
+      ))} */}
     </div>
   );
 };
 
-export default FeedTabs;
+export default Stories;
