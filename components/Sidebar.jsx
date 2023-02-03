@@ -6,7 +6,7 @@ import Link from "next/link";
 
 const Sidebar = () => {
   return (
-    <div className='flex w-96 flex-col space-y-5'>
+    <div className='sticky flex h-[calc(100vh_-_78px)] top-[78px] w-96 flex-col space-y-5'>
       <ul className='flex w-full flex-col space-y-3 p-3'>
         <li className='rounded-md py-1.5 pl-2 hover:bg-white/20'>
           <Link href='#' className='sidebar-link'>
@@ -24,7 +24,9 @@ const Sidebar = () => {
         </li>
 
         {sideItems.map((item) => (
-          <li className='rounded-md py-1.5 pl-2 hover:bg-white/20' key={item.id}>
+          <li
+            className='rounded-md py-1.5 pl-2 hover:bg-white/20'
+            key={item.id}>
             <Link href={item.link} className='sidebar-link'>
               <Image
                 src={item.image}

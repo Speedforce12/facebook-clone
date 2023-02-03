@@ -1,6 +1,7 @@
 import React from "react";
 import FeedTabs from "./FeedTabs";
 import InputBox from "./InputBox";
+import Post from "./Post";
 
 const Feed = () => {
   return (
@@ -8,6 +9,10 @@ const Feed = () => {
       <div className='w-full space-y-3 py-2'>
         <FeedTabs />
         <InputBox />
+        <Post />
+        <Post />
+
+        <Post />
       </div>
     </div>
   );

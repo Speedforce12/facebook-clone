@@ -12,7 +12,7 @@ import { TbBellRinging2 } from "react-icons/tb";
 
 const Header = () => {
   return (
-    <div className='sticky top-0 z-50 flex items-center justify-between  p-2 px-4 shadow-md'>
+    <div className='sticky top-0 z-50 flex items-center justify-between  p-2 px-4 shadow-md bg-black'>
       <div className='flex items-center space-x-3'>
         <Image
           src='/images/logo.png'

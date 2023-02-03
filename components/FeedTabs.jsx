@@ -25,10 +25,11 @@ const FeedTabs = () => {
       {data?.map((item) => (
         <div className='relative mx-2 flex w-full  items-center rounded-lg  p-2 shadow-md' key={item.id}>
           <Image
+            
             src={item.avatar}
             alt=''
             fill
-            className='rounded-lg object-contain'
+            className='rounded-lg object-contain cursor-pointer hover:scale-105'
           />
 
           <div className='absolute top-5 z-20 flex h-14 w-14 items-center justify-center rounded-full border-4 border-blue-500'>
