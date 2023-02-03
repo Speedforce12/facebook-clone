@@ -6,7 +6,7 @@ import Link from "next/link";
 
 const Sidebar = () => {
   return (
-    <div className='sticky flex h-[calc(100vh_-_78px)] top-[78px] w-96 flex-col space-y-5'>
+    <div className='sticky lg:flex  hidden h-[calc(100vh_-_78px)] top-[78px] w-96 flex-col space-y-5'>
       <ul className='flex w-full flex-col space-y-3 p-3'>
         <li className='rounded-md py-1.5 pl-2 hover:bg-white/20'>
           <Link href='#' className='sidebar-link'>

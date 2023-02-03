@@ -21,7 +21,7 @@ const FeedTabs = () => {
   }, []);
 
   return (
-    <div className='flex h-60 w-full rounded-lg bg-white p-2  dark:bg-black/10'>
+    <div className='flex h-60 lg:w-full lg:rounded-lg  bg-white p-2  dark:bg-black/10'>
       {data?.map((item) => (
         <div className='relative mx-2 flex w-full  items-center rounded-lg  p-2 shadow-md' key={item.id}>
           <Image
@@ -29,10 +29,10 @@ const FeedTabs = () => {
             src={item.avatar}
             alt=''
             fill
-            className='rounded-lg object-contain cursor-pointer hover:scale-105'
+            className='lg:rounded-lg object-contain cursor-pointer hover:scale-105 rounded-full'
           />
 
-          <div className='absolute top-5 z-20 flex h-14 w-14 items-center justify-center rounded-full border-4 border-blue-500'>
+          <div className='absolute top-5 z-20 lg:flex h-14 w-14 items-center justify-center rounded-full border-4 border-blue-500 hidden'>
             <Image
               src={item.avatar}
               alt=''
@@ -42,7 +42,7 @@ const FeedTabs = () => {
             />
           </div>
 
-          <span className='absolute bottom-4 w-48 truncate dark:text-white font-semibold text-gray-900 '>
+          <span className='absolute bottom-4 w-48 truncate dark:text-white font-semibold text-gray-900  hidden lg:inline-block'>
             {item.first_name} {item.last_name}
           </span>
         </div>

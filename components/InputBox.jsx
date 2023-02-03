@@ -97,16 +97,16 @@ const InputBox = () => {
         )}
       </div>
 
-      <div className='mt-3 flex items-center justify-evenly'>
+      <div className='mt-3 flex items-center lg:justify-evenly mx-auto'>
         <div className='flex w-full cursor-pointer items-center space-x-2 rounded-md px-6 py-1 hover:bg-slate-400/20'>
           <BiVideoRecording className='text-4xl text-red-600' />
-          <span className='font-semibold text-white'>Live video</span>
+          <span className='font-semibold text-white text hidden lg:flex'>Live video</span>
         </div>
         <div
           className='flex w-full cursor-pointer items-center space-x-2 rounded-md px-6 py-1 hover:bg-slate-400/20'
           onClick={() => imageRef.current.click()}>
           <FaPhotoVideo className='text-4xl text-green-600' />
-          <span className='font-semibold text-white'>Photo/video</span>
+          <span className='font-semibold text-white hidden lg:flex'>Photo/video</span>
           <input
             type='file'
             ref={imageRef}
@@ -116,7 +116,7 @@ const InputBox = () => {
         </div>
         <div className='flex w-full cursor-pointer items-center space-x-2 rounded-md px-6 py-1 hover:bg-slate-400/20'>
           <BiHappyAlt className='text-4xl text-yellow-600' />
-          <span className='font-semibold text-white'>Feeling/activity</span>
+          <span className='font-semibold text-white hidden lg:flex'>Feeling/activity</span>
         </div>
       </div>
 
