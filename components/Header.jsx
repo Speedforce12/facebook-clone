@@ -12,7 +12,7 @@ import { TbBellRinging2 } from "react-icons/tb";
 
 const Header = () => {
   return (
-    <div className='sticky top-0 z-50 flex items-center justify-between  p-2 px-4 shadow-md bg-black'>
+    <div className='sticky top-0 z-50 flex items-center justify-between  bg-[#09090A] p-2 px-4 shadow-md'>
       <div className='flex items-center space-x-3'>
         <Image
           src='/images/logo.png'
@@ -23,7 +23,6 @@ const Header = () => {
         />
 
         <NavSearch />
-
       </div>
       {/* middle */}
       <div className='hidden  items-center md:flex'>
@@ -43,7 +42,7 @@ const Header = () => {
           src='/images/avatar.png'
           width={200}
           height={200}
-          alt="avatar"
+          alt='avatar'
           className='h-10 w-10 cursor-pointer object-contain lg:h-12 lg:w-12'
         />
       </div>

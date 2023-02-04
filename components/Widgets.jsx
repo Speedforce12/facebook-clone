@@ -25,7 +25,7 @@ const Widgets = () => {
   console.log(profiles);
 
   return (
-    <div className='lg:flex lg:flex-col lg:translate-x-0 translate-x-full fixed right-2 w-96 space-y-3  p-3 hidden'>
+    <div className='fixed right-2 hidden w-96 translate-x-full space-y-3 bg-[#151515] rounded-lg p-3 lg:flex  lg:translate-x-0 lg:flex-col'>
       <div className='flex w-full items-center justify-between'>
         <h2 className='text-lg font-bold text-gray-700 dark:text-white'>
           Contacts

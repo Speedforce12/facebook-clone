@@ -5,7 +5,7 @@ import { RiShareForwardLine } from "react-icons/ri";
 
 const Post = () => {
   return (
-    <div className='w-full rounded-lg bg-black/10 p-3 shadow-lg'>
+    <div className='w-full rounded-lg bg-[#151515] p-3 shadow-lg '>
       <div className='flex flex-col space-y-1'>
         <div className='flex space-x-3'>
           <Image

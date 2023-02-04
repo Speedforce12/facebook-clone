@@ -10,5 +10,6 @@ module.exports = {
   plugins: [
     require("prettier-plugin-tailwindcss"),
     require("tailwind-scrollbar-hide"),
+    require("tailwind-scrollbar")({ nocompatible: true }),
   ],
 };

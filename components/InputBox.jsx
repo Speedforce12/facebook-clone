@@ -62,7 +62,7 @@ const InputBox = () => {
   };
 
   return (
-    <form className='w-full rounded-lg  bg-black/10 p-3 shadow-lg'>
+    <form className='w-full rounded-lg  bg-[#151515] p-3 shadow-lg'>
       <div className='flex items-center space-x-3 border-b border-gray-400/20 pb-3'>
         <Image
           src='/images/avatar.png'
@@ -97,16 +97,20 @@ const InputBox = () => {
         )}
       </div>
 
-      <div className='mt-3 flex items-center lg:justify-evenly mx-auto'>
+      <div className='mx-auto mt-3 flex items-center lg:justify-evenly'>
         <div className='flex w-full cursor-pointer items-center space-x-2 rounded-md px-6 py-1 hover:bg-slate-400/20'>
           <BiVideoRecording className='text-4xl text-red-600' />
-          <span className='font-semibold text-white text hidden lg:flex'>Live video</span>
+          <span className='text hidden font-semibold text-white lg:flex'>
+            Live video
+          </span>
         </div>
         <div
           className='flex w-full cursor-pointer items-center space-x-2 rounded-md px-6 py-1 hover:bg-slate-400/20'
           onClick={() => imageRef.current.click()}>
           <FaPhotoVideo className='text-4xl text-green-600' />
-          <span className='font-semibold text-white hidden lg:flex'>Photo/video</span>
+          <span className='hidden font-semibold text-white lg:flex'>
+            Photo/video
+          </span>
           <input
             type='file'
             ref={imageRef}
@@ -116,7 +120,9 @@ const InputBox = () => {
         </div>
         <div className='flex w-full cursor-pointer items-center space-x-2 rounded-md px-6 py-1 hover:bg-slate-400/20'>
           <BiHappyAlt className='text-4xl text-yellow-600' />
-          <span className='font-semibold text-white hidden lg:flex'>Feeling/activity</span>
+          <span className='hidden font-semibold text-white lg:flex'>
+            Feeling/activity
+          </span>
         </div>
       </div>
 

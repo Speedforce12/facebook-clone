@@ -23,11 +23,7 @@ const Stories = () => {
   }, []);
 
   return (
-    <div className='relative flex h-40 w-20 items-center gap-x-1 rounded-xl  lg:h-60 lg:w-40'>
-        <div className='AiOutlineRight absolute z-30 flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-white'>
-          <AiOutlineLeft className='text-lg text-gray-500' />
-        </div>
-
+    <div className='flex h-40 w-20 items-center gap-x-1 rounded-xl  lg:h-60 lg:w-40'>
       <Image
         src={profilePic}
         priority
@@ -63,10 +59,7 @@ const Stories = () => {
         priority
         className='h-full w-full  cursor-pointer rounded-lg object-cover hover:scale-[1.01]'
       />
-
-      <div className='AiOutlineRight absolute right-12 z-30 flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-white'>
-        <AiOutlineRight className='text-lg text-gray-500' />
-      </div>
+    
       {/* {data?.map((item) => (
         <div className='relative mx-2 flex w-full  items-center rounded-lg  p-2 shadow-md' key={item.id}>
           <Image
